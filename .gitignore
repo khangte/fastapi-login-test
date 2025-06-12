@@ -68,5 +68,6 @@ alembic.ini
 poetry.lock
 Pipfile.lock
 
+.idea/
 migrations/
 *.sh
