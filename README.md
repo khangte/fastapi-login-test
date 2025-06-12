@@ -21,8 +21,6 @@
 - RDBMS: MySQL 
 - 구동 방식: Docker Container
 - 데이터 유지: Docker Volume
-### 배포용 GitHub Repository
-- [GitHub/khangte](https://github.com/khangte/fastapi-login-test)
 
 ---
 
@@ -79,7 +77,9 @@ login-test/
 
 ---
 
-## uv 가상환경
+## 개발환경 설정
+
+### uv 가상환경
 - 가상환경 생성
 ```
 $ uv venv --python 3.11
@@ -89,7 +89,7 @@ $ uv venv --python 3.11
 $ source .venv/bin/activate 
 ```
 
-## Svelte 설치 (frontend 생성 전)
+### Svelte 설치 (frontend 생성 전)
 ```bash
 $ npm create vite@latest frontend -- --template svelte
 $ cd frontend
@@ -107,8 +107,9 @@ $ npm install
 
 ---
 
-### 실행코드
-#### 개발중
+## 실행코드
+
+### 개발중
 1. 백엔드 실행 (FastAPI)
 ```bash
 $ uvicorn main:app --reload --host 0.0.0.0 --port 8000
@@ -119,8 +120,10 @@ $ cd frontend
 $ npm run dev
 ```
 3. 개발 서버 접속 ```URL: **localhost:5173**```
+
 ---
-#### 배포용
+
+### 배포용
 1. 프론트엔드 빌드
 ```bash
 $ cd frontend
